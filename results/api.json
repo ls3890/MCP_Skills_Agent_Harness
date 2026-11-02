@@ -1,0 +1,370 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "effort": "medium",
+  "turns": [
+    {
+      "turn": 1,
+      "session": 1,
+      "user": "Hi! I'm looking for data engineer roles in Tel Aviv, hybrid. Please remember that as my preference.",
+      "reply": "העדפותיך נשמרו: תפקיד Data Engineer, מיקום תל‑אביב, מצב עבודה Hybrid. אשמח לעזור בחיפוש משרות או במעקב אחרי בקשות קיימות. איך תרצה להמשיך?",
+      "model_calls": 4,
+      "tools_called": [
+        "save_preference",
+        "save_preference",
+        "save_preference"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1186,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 87,
+          "elapsed_s": 0.82,
+          "cost_usd": 0.00023
+        },
+        {
+          "input": 1225,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 41,
+          "elapsed_s": 0.458,
+          "cost_usd": 0.000208
+        },
+        {
+          "input": 1265,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 43,
+          "elapsed_s": 0.426,
+          "cost_usd": 0.000216
+        },
+        {
+          "input": 283,
+          "cache_read": 1024,
+          "cache_write": 0,
+          "output": 69,
+          "elapsed_s": 0.467,
+          "cost_usd": 0.000161
+        }
+      ],
+      "totals": {
+        "input": 3959,
+        "cache_read": 1024,
+        "cache_write": 0,
+        "output": 240,
+        "cost_usd": 0.000815,
+        "elapsed_s": 2.171
+      }
+    },
+    {
+      "turn": 2,
+      "session": 1,
+      "user": "I just applied to Acme Analytics for the Senior Data Engineer position. Please record it.",
+      "reply": "הבקשה נרשמה:\n\n- ID 1 – Acme Analytics – Senior Data Engineer – מצב: applied\n\nאם תרצה לעדכן סטטוס, למחוק או להוסיף עוד, רק תגיד.",
+      "model_calls": 2,
+      "tools_called": [
+        "add_application"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1392,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 72,
+          "elapsed_s": 0.645,
+          "cost_usd": 0.000252
+        },
+        {
+          "input": 1446,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 50,
+          "elapsed_s": 0.559,
+          "cost_usd": 0.000247
+        }
+      ],
+      "totals": {
+        "input": 2838,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 122,
+        "cost_usd": 0.000499,
+        "elapsed_s": 1.204
+      }
+    },
+    {
+      "turn": 3,
+      "session": 1,
+      "user": "Never show me jobs from Globex. Please save Globex as an excluded company.",
+      "reply": "הוספתי את **Globex** לרשימת החברות המוחרגות. מעתה לא אציג משרות מחברה זו. איך אפשר לעזור עוד?האם תרצה שאחפש עבורך משרות Data Engineer בתל‑אביב במצב Hybrid (ללא Globex), או שיש משהו נוסף?",
+      "model_calls": 2,
+      "tools_called": [
+        "save_preference"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1519,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 56,
+          "elapsed_s": 5.12,
+          "cost_usd": 0.000261
+        },
+        {
+          "input": 1562,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 107,
+          "elapsed_s": 10.745,
+          "cost_usd": 0.000298
+        }
+      ],
+      "totals": {
+        "input": 3081,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 163,
+        "cost_usd": 0.000559,
+        "elapsed_s": 15.865
+      }
+    },
+    {
+      "turn": 4,
+      "session": 1,
+      "user": "Find me new data engineer openings in Tel Aviv.",
+      "reply": "הנה משרה אחת שעונה על ההעדפות שלך (לא כולל Globex ולא כוללת את המשרה שכבר הגשת אליה):\n\n- **Initech** – Data Engineer – תל‑אביב – hybrid – שכר ≈ 28 k ₪\n\nאם ברצונך לשמור אותה או לעקוב אחרי התהליך, רק תגיד!",
+      "model_calls": 2,
+      "tools_called": [
+        "search_jobs"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1653,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 115,
+          "elapsed_s": 12.787,
+          "cost_usd": 0.000317
+        },
+        {
+          "input": 1768,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 188,
+          "elapsed_s": 15.147,
+          "cost_usd": 0.000378
+        }
+      ],
+      "totals": {
+        "input": 3421,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 303,
+        "cost_usd": 0.000695,
+        "elapsed_s": 27.934
+      }
+    },
+    {
+      "turn": 5,
+      "session": 1,
+      "user": "Update application id 42 to phone_screen. It's my Acme application.",
+      "reply": "הסטטוס של הבקשה שלך:\n\n- **ID 1** – Acme Analytics – Senior Data Engineer – מצב: **phone_screen**  \n\nאם יש עוד משהו שצריך לעדכן או לחפש, רק תגיד!",
+      "model_calls": 4,
+      "tools_called": [
+        "update_status",
+        "list_applications",
+        "update_status"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1870,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 198,
+          "elapsed_s": 16.581,
+          "cost_usd": 0.000399
+        },
+        {
+          "input": 1908,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 155,
+          "elapsed_s": 15.16,
+          "cost_usd": 0.000379
+        },
+        {
+          "input": 1966,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 165,
+          "elapsed_s": 14.991,
+          "cost_usd": 0.000394
+        },
+        {
+          "input": 217,
+          "cache_read": 1792,
+          "cache_write": 0,
+          "output": 53,
+          "elapsed_s": 16.746,
+          "cost_usd": 0.000199
+        }
+      ],
+      "totals": {
+        "input": 5961,
+        "cache_read": 1792,
+        "cache_write": 0,
+        "output": 571,
+        "cost_usd": 0.001371,
+        "elapsed_s": 63.478
+      }
+    },
+    {
+      "turn": 6,
+      "session": 2,
+      "user": "Which role did I apply for at Acme, and what is its status?",
+      "reply": "- **תפקיד:** Senior Data Engineer  \n- **סטטוס:** phone_screen (ID 1)",
+      "model_calls": 2,
+      "tools_called": [
+        "list_applications"
+      ],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 1060,
+          "cache_read": 1024,
+          "cache_write": 0,
+          "output": 51,
+          "elapsed_s": 2.493,
+          "cost_usd": 0.000266
+        },
+        {
+          "input": 2142,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 26,
+          "elapsed_s": 9.783,
+          "cost_usd": 0.000337
+        }
+      ],
+      "totals": {
+        "input": 3202,
+        "cache_read": 1024,
+        "cache_write": 0,
+        "output": 77,
+        "cost_usd": 0.000603,
+        "elapsed_s": 12.276
+      }
+    },
+    {
+      "turn": 7,
+      "session": 2,
+      "user": "What job preferences do you have saved for me?",
+      "reply": "ההעדפות השמורות שלך:\n\n- **תפקיד**: Data Engineer  \n- **מיקום**: תל‑אביב  \n- **מצב עבודה**: Hybrid  \n- **חברות מוחרגות**: Globex  \n- **שכר מינימלי**: לא צויין (null)",
+      "model_calls": 1,
+      "tools_called": [],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 648,
+          "cache_read": 1536,
+          "cache_write": 0,
+          "output": 151,
+          "elapsed_s": 16.154,
+          "cost_usd": 0.000303
+        }
+      ],
+      "totals": {
+        "input": 648,
+        "cache_read": 1536,
+        "cache_write": 0,
+        "output": 151,
+        "cost_usd": 0.000303,
+        "elapsed_s": 16.154
+      }
+    },
+    {
+      "turn": 8,
+      "session": 2,
+      "user": "I also applied to Globex for a Data Engineer role. Add it to my tracker.",
+      "reply": "הבקשה שלך מתנגשת עם העדפתך הקבועה – **Globex** רשומה כרגע בחברות המוחרגות, ולכן איני מוסיף משרות מאותה חברה למעקב.\n\nהאם תרצה **להסיר את Globex מהרשימה המוחזרת** ולרשום את הבקשה, או לשמור על ההגדרה הקיימת ולהשאיר את המעקב ללא Globex? רק תגיד מה ברצונך לעשות.",
+      "model_calls": 1,
+      "tools_called": [],
+      "compacted": false,
+      "usage": [
+        {
+          "input": 2075,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 217,
+          "elapsed_s": 5.094,
+          "cost_usd": 0.000441
+        }
+      ],
+      "totals": {
+        "input": 2075,
+        "cache_read": 0,
+        "cache_write": 0,
+        "output": 217,
+        "cost_usd": 0.000441,
+        "elapsed_s": 5.094
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "C1 applications.json has Acme with status applied",
+      "passed": true,
+      "detail": "acme={'id': 1, 'company': 'Acme Analytics', 'title': 'Senior Data Engineer', 'status': 'applied', 'created_at': '2026-10-28T11:42:22+02:00', 'status_history': [{'status': 'applied', 'at': '2026-10-28T11:42:22+02:00'}]}"
+    },
+    {
+      "name": "C2 Acme status is phone_screen",
+      "passed": true,
+      "detail": "acme={'id': 1, 'company': 'Acme Analytics', 'title': 'Senior Data Engineer', 'status': 'phone_screen', 'created_at': '2026-10-28T11:42:22+02:00', 'status_history': [{'status': 'applied', 'at': '2026-10-28T11:42:22+02:00'}, {'status': 'phone_screen', 'at': '2026-10-28T11:43:54+02:00'}]}"
+    },
+    {
+      "name": "C7 ERR|not_found then recovery in the same turn",
+      "passed": true,
+      "detail": "update_status results=['ERR|not_found|id=42', 'OK|updated|id=1|applied->phone_screen']"
+    },
+    {
+      "name": "C3 session 2 loads applications from disk",
+      "passed": true,
+      "detail": "loaded=1"
+    },
+    {
+      "name": "C4 session 2 recalls the Acme role with no in-memory history",
+      "passed": true,
+      "detail": "title=Senior Data Engineer|prior_turns=0|reply='- **תפקיד:** Senior Data Engineer  \\n- **סטטוס:** phone_screen (ID\\u202f1)'"
+    },
+    {
+      "name": "C5 preference persisted and present in session 2 context",
+      "passed": true,
+      "detail": "on_disk=True|in_context=True"
+    },
+    {
+      "name": "C6 conflict: no new application, reply flags it and asks",
+      "passed": true,
+      "detail": "apps 1->1|flagged=True"
+    },
+    {
+      "name": "C8 every list_applications result <= 20 lines",
+      "passed": true,
+      "detail": "line_counts=[2, 2]"
+    }
+  ],
+  "harness_line_counts": {
+    "caching.py": 33,
+    "compaction.py": 49,
+    "context.py": 40,
+    "history.py": 52,
+    "loop.py": 66,
+    "memory.py": 31,
+    "tokens.py": 43,
+    "tools.py": 111
+  }
+}

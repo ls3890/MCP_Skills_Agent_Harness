@@ -1,0 +1,20 @@
+{
+  "sessions": [
+    {
+      "turns": [
+        "Hi! I'm looking for data engineer roles in Tel Aviv, hybrid. Please remember that as my preference.",
+        "I just applied to Acme Analytics for the Senior Data Engineer position. Please record it.",
+        "Never show me jobs from Globex. Please save Globex as an excluded company.",
+        "Find me new data engineer openings in Tel Aviv.",
+        "Update application id 42 to phone_screen. It's my Acme application."
+      ]
+    },
+    {
+      "turns": [
+        "Which role did I apply for at Acme, and what is its status?",
+        "What job preferences do you have saved for me?",
+        "I also applied to Globex for a Data Engineer role. Add it to my tracker."
+      ]
+    }
+  ]
+}

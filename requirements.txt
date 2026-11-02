@@ -1,0 +1,6 @@
+groq==0.37.1
+python-dotenv==1.2.2
+truststore==0.10.5
+pytest==8.2.0
+tzdata==2026.2
+claude-agent-sdk==0.2.174
